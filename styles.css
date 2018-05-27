@@ -1,0 +1,49 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/blue-bcg.png);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Email, .Password {
+  width: 100%;
+  border-radius: 5px;
+}
+h2, label {
+  color: #b02b2b;
+}
+div a {
+  border: 10%;
+  color: #000000;
+  display: block;
+}
+button {
+  border-radius: 5px;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+}
+label, .checkbox {
+  margin-top: 10px;
+}
+.logo {
+  width: 120px;
+  margin-left: 5px;
+}
+.Email {
+  margin-top: 10px;
+}
+.login-form {
+  width: 100%;
+}
+ div {
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+  }
