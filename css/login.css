@@ -3,13 +3,20 @@
 * {
   box-sizing: border-box;
 }
+.register-body{
+  background-image: url(../images/red-bcg.png);
+  width: 100%;
+  background-size: cover;
+}
 body {
   background-image: url(../images/blue-bcg.png);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
+
 .Email, .Password {
   width: 100%;
   border-radius: 5px;
