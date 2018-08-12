@@ -46,12 +46,54 @@
   <head>
     <meta charset="utf-8">
     <title>REGISTER</title>
+		<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/login.css">
   </head>
-  <body class="register-body">
+  <body>
+		<header>
+			<div class="navbar-muu">
+					<div class="navbar-img-muu">
+					<img src="images/navbar-muu.png">
+					</div>
+				<div class="navbar-sections">
 
-    <div class="login-form, col-md-6">
+					<div class="home-1">
+					<h3> <a href="index.php"> Home </a> </h3>
+					</div>
+					<div class="about-2">
+					<h3> <a href="faq.php"> About Us </a> </h3>
+					</div>
+					<div class="register-3">
+					<h3> <a href="register.php"> Register </a> </h3>
+					</div>
+					<div class="login-4">
+					<h3> <a href="login.php"> Login </a> </h3>
+					</div>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						 <ion-icon name="menu" size="large">
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="faq.php">About Us</a></li>
+						<li><a href="register.php">Register</a></li>
+						<li><a href="login.php">Login</a></li>
+					</ul>
+
+				</div class= "form-login">
+				<div class="btn-group pull-right">
+				<button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+					 <ion-icon name="menu" size="large">
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="faq.php">About us</a></li>
+					<li><a href="register.php">Register</a></li>
+					<li><a href="login.php">Login</a></li>
+				</ul>
+			</div>
+			</div>
+		</header>
+
+    <div class="login-form, col-md-6 form-login">
       <div class="photo-logo">
       <a href="index.php"><img src="images/Logo.png" alt="logotipo" class="logo"></a>
       </div>
