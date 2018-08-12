@@ -13,8 +13,6 @@
   <meta charset="UTF-8">
   <title>Muu Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,27 +29,27 @@
         </div>
       <div class="navbar-sections">
 
-        <div class="home-1">
-        <h3> <a href="index.php"> Home </a> </h3>
-        </div>
-        <div class="about-2">
+        <div class="about-1">
         <h3> <a href="faq.php"> About Us </a> </h3>
         </div>
-        <div class="register-3">
+        <div class="register-2">
         <h3> <a href="register.php"> Register </a> </h3>
         </div>
-        <div class="login-4">
+        <div class="login-3">
         <h3> <a href="login.php"> Login </a> </h3>
         </div>
+				<div class="category-4">
+				<h3> <a href="categories.php"> Categories </a> </h3>
+				</div>
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
            <ion-icon name="menu" size="large">
         </button>
         <ul class="dropdown-menu" role="menu">
           <li><a href="faq.php">About Us</a></li>
+					<li><a href="categories.php">Categories</a></li>
           <li><a href="register.php">Register</a></li>
           <li><a href="login.php">Login</a></li>
         </ul>
-
       </div>
       <div class="btn-group pull-right">
       <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
@@ -59,6 +57,7 @@
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="faq.php">About us</a></li>
+				<li><a href="categories.php">Categories</a></li>				
         <li><a href="register.php">Register</a></li>
         <li><a href="login.php">Login</a></li>
       </ul>
@@ -103,19 +102,6 @@
   </div>
 
    <img src="images/child-image.jpg" alt="child-image">
-
-
- <div id="circularMenu" class="circular-menu" size="large">
-    <a class="floating-btn"  onclick="document.getElementById('circularMenu').classList.toggle('active');">
-      <i class="fa fa-plus" size="large"></i>
-    </a>
-    <menu class="items-wrapper">
-      <a href="#" class="menu-item fa fa-facebook"></a>
-      <a href="#" class="menu-item fa fa-twitter"></a>
-      <a href="#" class="menu-item fa fa-google-plus"></a>
-      <a href="#" class="menu-item fa fa-instagram"></a>
-    </menu>
-  </div>
 
 	  <footer class="container-footer">
 	<div class="footer-logo">
