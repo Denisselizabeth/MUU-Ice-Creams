@@ -1,14 +1,14 @@
 <?php
 
 
-class User
+class user
 {
   private $id;
   private $name;
   private $email;
   private $address;
   private $password;
-  private $picture;
+  private $image;
 
   function __construct($id,$name,$email,$address,$password,$picture)
   {
@@ -20,7 +20,7 @@ class User
     $this->picture = $picture;
   }
 
- //Function validates
+ //Function validate
  //Function register
  //Function login
 
