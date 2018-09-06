@@ -20,20 +20,30 @@
 		if (empty($errores)) {
 			$usuario = existeEmail($email);
 			loguear($usuario);
+<<<<<<< HEAD
 		}
+=======
+
+>>>>>>> origin/master
 			// Seteo la cookie
 			if (isset($_POST["recordar"])) {
 	        setcookie('id', $usuario['id'], time() + 3600 * 24 * 30);
 	      }
+<<<<<<< HEAD
 			if ($email="admin@hotmail.com"){
 				if (EXISTS('muudb')){
 			header('location: admin.php');}
 			else{
+=======
+>>>>>>> origin/master
 			header('location: perfil.php');
 			exit;
 		}
 	}
+<<<<<<< HEAD
 	}
+=======
+>>>>>>> origin/master
 ?>
 <!DOCTYPE html>
 <html>

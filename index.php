@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 	require_once 'funciones.php';
 	require_once 'clases/DB.php';
 	require_once 'clases/db_connection.php';
@@ -10,6 +11,9 @@
 	require_once 'classes/user.php';
 	require_once 'classes/users.php';
 
+=======
+	require_once('funciones.php');
+>>>>>>> origin/master
 
 	if (estaLogueado()) {
 		header('location: perfil.php');
@@ -51,9 +55,12 @@
 				<div class="category-4">
 				<h3> <a href="categories.php"> Categories </a> </h3>
 				</div>
+<<<<<<< HEAD
         <div class="category-4">
 				<h3> <a href="admin.php"> Admin </a> </h3>
 				</div>
+=======
+>>>>>>> origin/master
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
            <ion-icon name="menu" size="large">
         </button>
@@ -62,7 +69,11 @@
 					<li><a href="categories.php">Categories</a></li>
           <li><a href="register.php">Register</a></li>
           <li><a href="login.php">Login</a></li>
+<<<<<<< HEAD
           </ul>
+=======
+        </ul>
+>>>>>>> origin/master
       </div>
       <div class="btn-group pull-right">
       <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
@@ -70,7 +81,11 @@
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="faq.php">About us</a></li>
+<<<<<<< HEAD
 				<li><a href="categories.php">Categories</a></li>
+=======
+				<li><a href="categories.php">Categories</a></li>				
+>>>>>>> origin/master
         <li><a href="register.php">Register</a></li>
         <li><a href="login.php">Login</a></li>
       </ul>

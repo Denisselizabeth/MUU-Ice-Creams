@@ -10,8 +10,12 @@
 	$name = '';
 	$email = '';
 	$address = '';
+<<<<<<< HEAD
 	$telephone = '';
   $gender='';
+=======
+
+>>>>>>> origin/master
 	// Array de errores vacío
 	$errores = [];
 
@@ -22,8 +26,12 @@
 		$name = trim($_POST['name']);
 		$email = trim($_POST['email']);
 		$addres = trim($_POST['address']);
+<<<<<<< HEAD
 		$telephone = trim($_POST['telephone']);
 		$gender = trim($_POST['gender']);
+=======
+
+>>>>>>> origin/master
 		// Valido y guardo en errores
 		$errores = validar($_POST, 'avatar');
 
@@ -128,6 +136,7 @@
              </span>
        </div>
 
+<<<<<<< HEAD
 
 			 <div class="form-group <?= isset($errores['name']) ? 'has-error' : null ?>">
              <label class="control-label">Telephone:</label>
@@ -157,6 +166,8 @@
        </div>
 
 
+=======
+>>>>>>> origin/master
        <div class="form-group <?= isset($errores['pass']) ? 'has-error' : null ?>">
 							<label class="control-label">Password:</label>
 							<input class="form-control" type="password" name="pass" value="">

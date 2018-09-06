@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 require_once 'clases/DB.php';
 require_once 'clases/db_connection.php';
 require_once 'clases/modelo.php';
@@ -8,6 +9,8 @@ require_once 'clases/size.php';
 require_once 'clases/sizes.php';
 require_once 'clases/user.php';
 require_once 'clases/users.php';
+=======
+>>>>>>> origin/master
 
 	session_start();
 
@@ -23,12 +26,19 @@ require_once 'clases/users.php';
 		- Usa la función traerUltimoID() para generar un ID para cada usuario
 		- Retorna el array con el usuario final
 	*/
+<<<<<<< HEAD
 		$usuario= new user;
 		$usuario = save([
+=======
+	function crearUsuario($data, $imagen) {
+		$usuario = [
+			'id' => traerUltimoID(),
+>>>>>>> origin/master
 			'name' => $data['name'],
 			'email' => $data['email'],
 			'pass' => password_hash($data['pass'], PASSWORD_DEFAULT),
 			'address' => $data['address'],
+<<<<<<< HEAD
 			'telephone' => $data['telephone'],
 			'gender' => $data['gender'],
 			'avatar' => 'img/' . $data['email'] . '.' . pathinfo($_FILES[$imagen]['name'], PATHINFO_EXTENSION)
@@ -47,6 +57,13 @@ require_once 'clases/users.php';
 			'size_id' => $data['size_id'],
 	]);
 
+=======
+			'foto' => 'img/' . $data['email'] . '.' . pathinfo($_FILES[$imagen]['name'], PATHINFO_EXTENSION)
+		];
+
+	   return $usuario;
+	}
+>>>>>>> origin/master
 	// == FUNCTION - validar ==
 	/*
 		- Recibe dos parámetros -> $_POST y el nombre del campo de subir imagen
@@ -59,11 +76,20 @@ require_once 'clases/users.php';
 		$name = trim($_POST['name']);
 		$email = trim($_POST['email']);
 		$address = trim($_POST['address']);
+<<<<<<< HEAD
 		$telephone = trim($_POST['telephone']);
 		$gender = trim($_POST['gender']);
 		$pass = trim($_POST['pass']);
 		$rpass = trim($_POST['rpass']);
 		// Valido cada campo del formulario y por cada error genero una posición en el array de errores ($errores) que inicialmente estaba vacío
+=======
+		$pass = trim($_POST['pass']);
+		$rpass = trim($_POST['rpass']);
+
+
+		// Valido cada campo del formulario y por cada error genero una posición en el array de errores ($errores) que inicialmente estaba vacío
+
+>>>>>>> origin/master
 		if ($name == '') { // Si el nombre está vacio
 			$errores['name'] = "Please provide your name";
 		}
@@ -72,6 +98,7 @@ require_once 'clases/users.php';
 			$errores['address'] = "Please provide your address";
 		}
 
+<<<<<<< HEAD
 		if ($gender == '') { // Si el género fue seleccionado
 			$errores['gender'] = "Please select your gender";
 		}
@@ -80,6 +107,8 @@ require_once 'clases/users.php';
 			$errores['telephone'] = "Please provide your telephone";
 		}
 
+=======
+>>>>>>> origin/master
 		if ($email == '') { // Si el email está vacio
 			$errores['email'] = "Please provide your email";
 		} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -103,19 +132,32 @@ require_once 'clases/users.php';
 			if ($ext != 'jpg' && $ext != 'png' && $ext != 'jpeg') {
 				$errores['avatar'] = "Picture format allowed: JPG, JPEG or PNG";
 			}
+<<<<<<< HEAD
 		}
 		return $errores;
 	}
 
 
 
+=======
+
+		}
+
+		return $errores;
+	}
+
+>>>>>>> origin/master
 	// == FUNCTION - traerTodos ==
 	/*
 		- NO recibe parámetros
 		- Lee el JSON y arma un array de arrays de usuarios, cada línea en el JSON será un array de 1 usuario
 		- Retorna el array con todos los usuarios
 	*/
+<<<<<<< HEAD
 	/*function traerTodos() {
+=======
+	function traerTodos() {
+>>>>>>> origin/master
 		// Traigo la data de todos los usuarios de 'usuarios.json'
 		$todosJson = file_get_contents('usuarios.json');
 
@@ -142,7 +184,11 @@ require_once 'clases/users.php';
 		- Usa la función traerTodos()
 		- Retorna un número. En el 1er usuario registrado devuelve 1 y en los siguientes al ID actual le suma 1
 	*/
+<<<<<<< HEAD
 /*	function traerUltimoID(){
+=======
+	function traerUltimoID(){
+>>>>>>> origin/master
 		// me traigo todos los usuarios
 		$usuarios = traerTodos();
 
@@ -166,6 +212,7 @@ require_once 'clases/users.php';
 		- Usa la función traerTodos()
 		- Retorna un array del usuario si encuentra el email. De no encontrarlo, retorna false
 	*/
+<<<<<<< HEAD
 
 	function select($tabla, $id)
 	{
@@ -232,6 +279,12 @@ require_once 'clases/users.php';
 	function existeEmail($email){
 		// Traigo todos los usuarios
 		$todos = getAllusers();
+=======
+	function existeEmail($email){
+		// Traigo todos los usuarios
+		$todos = traerTodos();
+
+>>>>>>> origin/master
 		// Recorro ese array
 		foreach ($todos as $unUsuario) {
 			// Si el mail del usuario en el array es igual al que me llegó por POST, devuelvo al usuario
@@ -288,9 +341,16 @@ require_once 'clases/users.php';
 		- Su función principal es guardar al usuario
 		- Retorna el usuario para poder auto-loguear después del registro
 	*/
+<<<<<<< HEAD
 	/*function guardarUsuario($data, $imagen){
 
 		$usuario = crearUsuario($data, $imagen);
+=======
+	function guardarUsuario($data, $imagen){
+
+		$usuario = crearUsuario($data, $imagen);
+
+>>>>>>> origin/master
 		$usuarioJSON = json_encode($usuario);
 
 		// Inserta el objeto JSON en nuestro archivo de usuarios
@@ -354,8 +414,11 @@ require_once 'clases/users.php';
 		return isset($_SESSION['id']);
 	}
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 	// == FUNCTION - traerId ==
 	/*
 		- Recibe un parámetro -> $id:
@@ -364,7 +427,11 @@ require_once 'clases/users.php';
 	*/
 	function traerPorId($id){
 		// me traigo todos los usuarios
+<<<<<<< HEAD
 		$todos = getAllusers();
+=======
+		$todos = traerTodos();
+>>>>>>> origin/master
 
 		// Recorro el array de todos los usuarios
 		foreach ($todos as $usuario) {

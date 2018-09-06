@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 require_once('funciones.php');
 require 'clases/DB.php';
@@ -12,6 +13,8 @@ require 'classes/user.php';
 require 'classes/users.php';
 ?>
 
+=======
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html>
   <head>
@@ -69,6 +72,7 @@ require 'classes/users.php';
 		</header>
     <div class="fotos-categorie">
      <img src="images/todos-los-sabores.png" alt="" class="col-md-6">
+<<<<<<< HEAD
      <?php
       $allIceCreams=new ice_creams;
       $allIceCreams=getAllicecreams();
@@ -78,6 +82,9 @@ require 'classes/users.php';
      $AllSizes=new sizes;
      $AllSizes=getAllsizes();
       ?>
+=======
+     <img src="images/potes-chicos.jpg" alt="" class="col-md-6" >
+>>>>>>> origin/master
     </div>
     <div class="fixed-bottom">
   <footer class="container-footer">

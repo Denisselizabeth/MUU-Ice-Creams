@@ -6,6 +6,10 @@
 		exit;
 	}
 
+<<<<<<< HEAD
+=======
+	$usuario = traerPorId($_SESSION['id']);
+>>>>>>> origin/master
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
